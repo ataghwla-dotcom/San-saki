@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي مع الصور</title>
+  <title>موقعي مع الصور من الهاتف</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -18,7 +18,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    h2 {
+    h1, h2 {
       color: #333;
     }
     p {
@@ -27,6 +27,19 @@
       max-width: 600px;
       margin: 10px auto;
     }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
   </style>
 </head>
 <body>
@@ -34,10 +47,13 @@
 <h1>مرحبًا بكم في موقعي</h1>
 <p>هنا الصور التي رفعتها من الهاتف:</p>
 
-<img src="67259ccc25c3b7a3e87362bb039b8fb9.jpg" alt="صورة من الهاتف 1">
-<img src="king.jpg" alt="صورة من الهاتف 2">
+<!-- الصور من الهاتف -->
+<img src="king.jpg" alt="صورة من الهاتف 1">
+<img src="images/photo2.jpg" alt="صورة من الهاتف 2">
 
-<p>يمكنك الآن تعديل النصوص والصور كما تحب!</p>
+<p>يمكنك تعديل النصوص والصور كما تحب!</p>
+
+<button onclick="alert('شكراً لزيارتك!')">اضغط هنا</button>
 
 </body>
 </html>
