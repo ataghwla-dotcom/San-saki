@@ -3,57 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي مع الصور من الهاتف</title>
+  <title>روايتي الجميلة</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa; /* لون هادئ للخلفية */
+      color: #333;
       text-align: center;
-      padding: 20px;
     }
-    img {
-      max-width: 80%;
-      height: auto;
-      margin: 15px 0;
-      border-radius: 10px;
+
+    header {
+      background-color: #a3c9d8; /* لون هادئ للعنوان */
+      color: #fff;
+      padding: 30px 10px;
+      font-size: 32px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 10px;
+      gap: 20px;
+      background-color: #e2f0f7; /* لون هادئ للخلفية */
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .section img {
+      width: 200px;
+      max-width: 45%;
+      border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    h1, h2 {
-      color: #333;
-    }
-    p {
-      color: #555;
+
+    .section p {
+      max-width: 300px;
       font-size: 18px;
-      max-width: 600px;
-      margin: 10px auto;
+      line-height: 1.6;
+      text-align: center;
+      color: #2f4f4f;
     }
-    button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
+
+    footer {
+      background-color: #a3c9d8;
+      color: #fff;
+      padding: 15px 0;
       font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      margin: 10px;
+      margin-top: 20px;
     }
-    button:hover {
-      background-color: #45a049;
+
+    @media (max-width: 600px) {
+      .section {
+        flex-direction: column;
+      }
+      .section img {
+        max-width: 80%;
+      }
     }
   </style>
 </head>
 <body>
 
-<h1>مرحبًا بكم في موقعي</h1>
-<p>هنا الصور التي رفعتها من الهاتف:</p>
+<header> المافيا الروسية .عنوان الرواية:  اام
+</header>
 
-<!-- الصور من الهاتف -->
-<img src="king.jpg" alt="صورة من الهاتف 1">
-<img src="photo2.jpg" alt="صورة من الهاتف 2">
+<div class="section">
+  <img src="images/photo1.jpg" alt="صورة من الرواية">
+  <p> Perfect, I can feel the intensity already 😈. Let’s start shaping it. Here’s an opening scene to set the tone:
 
-<p>يمكنك تعديل النصوص والصور كما تحب!</p>
 
-<button onclick="alert('شكراً لزيارتك!')">اضغط هنا</button>
+---
+
+Title: Crimson Empire
+
+Rain slicked streets reflected the neon glow of the city. In the shadowed alleyways, fear whispered his name: Silva. Once a soldier in a powerful mafia family, he had shattered every tie that bound him, leaving betrayal and blood in his wake. Now, he ruled a business empire built on cold calculation, intimidation, and an ambition that knew no moral bounds.
+
+Tonight, he walked through the warehouse district, boots splashing in puddles, eyes scanning. A shipment was late—an unforgivable mistake. Silva didn’t raise his voice, didn’t even frown. His mere presence was punishment enough.
+
+When his men finally appeared, soaked and trembling, he tilted his head slightly. “Do you know why mistakes are deadly?” His voice was a blade. “Because I never forget them.”
+
+Lightning flashed, illuminating the scar running down his left cheek—a reminder that his past, though buried, always followed him. He smiled. Not a warm smile… a predator’s grin.
+
+Silva wasn’t just feared. He was inevitable. And tonight, he intended to remind the city exactly why.
+
+
+---
+
+If you want, we can jump right into the first major action scene, where Silva enforces his authority in a way that cements his terrifying reputation.
+
+Do you want me to do that next?
+
+  </p>صف الشخصيات أو أي نص تريده.
+  </p>
+  <img src="images/photo2.jpg" alt="صورة أخرى من الرواية">
+</div>
+
+<footer>
+  حقوق النشر © 2025
+</footer>
 
 </body>
 </html>
