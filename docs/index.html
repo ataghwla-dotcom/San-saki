@@ -1,109 +1,82 @@
-!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>صفحة متحركة 💫</title>
-
-  <style>
-    body {
-      background-color: #faf6ff;
-      font-family: "Cairo", sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      overflow-x: hidden; /* يمنع التمرير الجانبي أثناء الحركة */
-    }
-
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 40px;
-    }
-
-    img {
-      width: 200px;
-      border-radius: 15px;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-
-    img:hover {
-      transform: scale(1.05);
-    }
-
-    .text {
-      flex: 1;
-      margin: 0 20px;
-      font-size: 20px;
-      color: #4a3f7a;
-      line-height: 1.8;
-      opacity: 0;
-      animation: fadeIn 2s ease forwards;
-      animation-delay: 1s;
-    }
-
-    /* ✨ الصور تتحرك من الأطراف */
-    .left-img {
-      animation: slideLeft 2s ease forwards;
-    }
-
-    .right-img {
-      animation: slideRight 2s ease forwards;
-    }
-
-    /* الحركات (أنيميشن) */
-    @keyframes slideLeft {
-      from { transform: translateX(-200px); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
-    }
-
-    @keyframes slideRight {
-      from { transform: translateX(200px); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-  </style>
-</head>
-
-<body>
-
-  <div class="container">
-    <img src="koharaa.jpg" alt="صورة يسار" class="left-img">
-
-    <div class="text">
-      <h2>✨ أهلاً بك في عالمي 💜</h2>
-      <p>
-        أتعلم كيف أصنع المواقع خطوة بخطوة...  
-        وكل صفحة أصممها تصبح أجمل من السابقة 🌸
-      </p>
-    </div>
-
-    <img src="moon.jpg" alt="صورة يمين" class="right-img">
-  </div>
-
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>صفحة متحركة 💫</title>
-
+  <title>موقعي الجميل</title>
   <style>
     body {
-      background-color: #faf6ff;
-      font-family: "Cairo", sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
       margin: 0;
       padding: 0;
       text-align: center;
-      overflow-x: hidden; /* يمنع التمرير الجانبي أثناء الحركة */
     }
-    https://via.placeholder.com/350x200
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      font-size: 24px;
+    }
+    h2 {
+      color: #333;
+    }
+    p {
+      color: #555;
+      font-size: 18px;
+      max-width: 600px;
+      margin: 10px auto;
+    }
+    img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  مرحبا بكم في موقعي
+</header>
+
+<h2>عنوان فرعي جديد</h2>
+<p>هذا نص تجريبي يوضح كيفية إضافة محتوى جديد على موقعك بسهولة. يمكنك تعديل النص والصور كما تحب!</p>
+
+<img src="https://via.placeholder.com/400x250" alt="صورة تجريبية">
+
+<p>إضافة فقرة ثانية لتجربة النصوص المتعددة.</p>
+
+<img src="https://via.placeholder.com/350x200" alt="صورة ثانية">
+
+<button onclick="alert('شكراً لزيارتك!')">اضغط هنا</button>
+
+<footer>
+  حقوق النشر © 2025
+</footer>
+
+</body>
+</html>
